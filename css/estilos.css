@@ -1,12 +1,43 @@
+/*reset do css*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body{
-    background-image: url('https://cdn.hipwallpaper.com/i/11/33/8NACHV.jpg');
+    background-image: url('../img/fundonuvem.jpg');
     background-size: auto 100vh;
     font-family: Arial;
+    font-size: 12px;
     height: 100vh;
+  }
+  /* se a tiver pelo menos 400px vai carregar estes estilos */
+@media (min-width: 400px){
+    body{
+      font-size: 14px;
+    }
+}
+
+/* breakpoint*/
+@media (min-width: 600px){
+  body{
+    font-size: 18px;
+  }
+}
+
+  header{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .menu{
     background-color: #FFF;
+    position: fixed;
+    width: 100vw;
+    top: 0;
   }
   
   .menu li{
@@ -18,8 +49,13 @@ body{
     justify-content: space-around;
   }
   
+.menu a{
+  
+  display: block;
+  padding: 10px 20px;
+}
   a{
-    color: #8A2BE2;
+    color: #A6a6a6;
     text-decoration: none;
   }
   
@@ -30,11 +66,24 @@ body{
   .site-subtitle,
   .site-title{
     text-align: center;
-    color: #483D8B;
+    color: #7e0062;
+  }
+
+  .site-title{
+    font-size: 4em;
   }
   
   .site-subtitle{
     font-style: italic;
   }
   
+  .img-portfolio{
+    width: 180px;
+    height: 180px;
+  }
   
+  section{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
